@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>web app</title>
+</head>
+<body>
+    <main>   
+        <div>
+            <label> 고정 확장자 
+            <input id="checkBox" type="checkbox" value="bat" name="goCheck" class = "goCheck"> bat</label>
+            <label><input id="checkBox" type="checkbox" value="cmd" name="goCheck" class = "goCheck"> cmd </label>
+            <label><input id="checkBox" type="checkbox" value="com" name="goCheck" class = "goCheck"> com </label>
+            <label><input id="checkBox" type="checkbox" value="cpl" name="goCheck" class = "goCheck"> cpl </label>
+            <label><input id="checkBox" type="checkbox" value="exe" name="goCheck" class = "goCheck"> exe </label>
+            <label><input id="checkBox" type="checkbox" value="scr" name="goCheck" class = "goCheck"> scr </label>
+            <label><input id="checkBox" type="checkbox" value="js" name="goCheck" class = "goCheck"> js </label>
+        </div>
+        <!-- <script>
+            function doSave(){
+                let check_len = document.getElementsByName("goCheck");
+                for(let i = 0; i < check_len.length; i++){
+                    if(check_len[i].checked){
+
+                    }
+                }
+            }
+        </script> -->
+
+        <br><br><br>
+        <!-- <div>
+           <input placeholder="search by name" id="search-input">
+           <button id="search-btn">Search</button>
+        </div> -->
+        <label>커스텀 확장자</label>
+        <input type="text" id="name-input" maxlength="20" style="ime-mode:inactive">
+        <button id="add-name-btn" type="button" onClick="location.reload(true)"> + 추가</button>
+        
+
+        <br>
+
+        <table id="table">
+            <thead>
+                <!-- <th>ID</th> -->
+                <th>Name</th>
+                <!-- <th>Date Added</th> -->
+                <th>Delete</th>
+                <!-- <th>Edit</th> -->
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <section hidden id="update-row">
+            <label>Name:</label>
+            <input type="text" id="update-name-input">
+            <button id="update-row-btn">Update</button>
+        </section>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
